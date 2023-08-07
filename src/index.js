@@ -1,22 +1,24 @@
 const header = document.querySelector(".header");
+const searchContainer = document.querySelector(".search-container");
 const searchLocationBtn = document.querySelector(".search-location");
 const searchTimeBtn = document.querySelector(".search-time");
 const searchPeopleBtn = document.querySelector(".search-people");
+const coverScreen = document.querySelector(".header-coverScreen");
 
-const headerSearchHandle = () => {
-  const headerParent = header.parentNode;
-
+const headerSearchHandler = () => {
   header.style = "box-shadow: none";
   header.classList.add("header-scale");
-
-  const coverScreen = document.querySelector(".header-coverScreen");
   coverScreen.classList.add("on");
+  searchContainer.classList.add("scale-transform");
+};
+
+coverScreen.onclick = () => {
+  header.style = "box-shadow: var(--box-shadow)";
+  header.classList.remove("header-scale");
+  coverScreen.classList.remove("on");
+  searchContainer.classList.remove("scale-transform");
 };
 
 searchLocationBtn.onclick = () => {
-  headerSearchHandle();
-};
-
-header.parentNode.querySelector(".header-coverScreen").onclick = () => {
-  console.log("Im in");
+  headerSearchHandler();
 };
