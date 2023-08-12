@@ -10,6 +10,9 @@ const headerSearchHandler = () => {
   header.classList.add("header-scale");
   coverScreen.classList.add("on");
   searchContainer.classList.add("scale-transform");
+
+  //test
+  document.querySelector(".search-feature").style = "display: block";
 };
 
 coverScreen.onclick = () => {
@@ -17,6 +20,9 @@ coverScreen.onclick = () => {
   header.classList.remove("header-scale");
   coverScreen.classList.remove("on");
   searchContainer.classList.remove("scale-transform");
+
+    //test
+    document.querySelector(".search-feature").style = "display: none";
 };
 
 searchLocationBtn.onclick = () => {
