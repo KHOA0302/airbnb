@@ -101,61 +101,74 @@
 
                 <div class="search-feature-content">
                   <div class="feature-content-container">
-                    <div class="content-location">
-                      <button>
+                    <label for="location-input" class="content-location">
+                      <div class="content-location-container">
                         <p>Địa điểm</p>
-                        <input type="text" placeholder="Tiềm kiếm điểm đến" />
-                      </button>
-                    </div>
+                        <input
+                          type="text"
+                          placeholder="Tiềm kiếm điểm đến"
+                          id="location-input"
+                          name="location-input"
+                        />
+                      </div>
+                    </label>
 
                     <span class="feature-content-saperation"></span>
 
                     <div class="content-check">
-                      <button class="content-checkin">
-                        <p>Nhận phòng</p>
-                        <p>Thêm ngày</p>
-                      </button>
-                      <span class="feature-content-saperation"></span>
-                      <button class="content-checkout">
-                        <p>Trả phòng</p>
-                        <p>Thêm ngày</p>
-                      </button>
+                      <div class="content-check-container">
+                        <div class="content-checkin">
+                          <div class="content-checkin-container">
+                            <p>Nhận phòng</p>
+                            <p>Thêm ngày</p>
+                          </div>
+                        </div>
+                        <span class="feature-content-saperation"></span>
+                        <div class="content-checkout">
+                          <div class="content-checkout-container">
+                            <p>Trả phòng</p>
+                            <p>Thêm ngày</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
 
                     <span class="feature-content-saperation"></span>
 
                     <div class="content-people">
-                      <button class="content-people-add">
-                        <span>
-                          <p>Khách</p>
-                          <p>Thêm Khách</p></span
-                        >
-                      </button>
-                      <button>
-                        <div class="search-icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 32 32"
-                            aria-hidden="true"
-                            role="presentation"
-                            focusable="false"
-                            style="
-                              display: block;
-                              fill: none;
-                              height: 16px;
-                              width: 16px;
-                              stroke: currentcolor;
-                              stroke-width: 4;
-                              overflow: visible;
-                            "
+                      <div class="content-people-container">
+                        <div class="content-people-add">
+                          <span>
+                            <p>Khách</p>
+                            <p>Thêm Khách</p></span
                           >
-                            <path
-                              fill="none"
-                              d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"
-                            ></path>
-                          </svg>
                         </div>
-                      </button>
+                        <div>
+                          <div class="search-icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 32 32"
+                              aria-hidden="true"
+                              role="presentation"
+                              focusable="false"
+                              style="
+                                display: block;
+                                fill: none;
+                                height: 16px;
+                                width: 16px;
+                                stroke: currentcolor;
+                                stroke-width: 4;
+                                overflow: visible;
+                              "
+                            >
+                              <path
+                                fill="none"
+                                d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

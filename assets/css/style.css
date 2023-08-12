@@ -1,5 +1,3 @@
-
-
 .header {
   position: fixed;
   width: 100%;
@@ -240,30 +238,26 @@
   border: var(--border-light);
   border-radius: 80px;
   width: 100%;
-}
-
-.feature-content-container div button {
-  height: 100%;
-  padding: 8px 20px;
-}
-
-.feature-content-container button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+  overflow: hidden;
 }
 
 .content-people {
-  display: flex;
-  align-items: center;
-  padding-right: 10px !important;
   height: 100%;
   flex: 1;
-  justify-content: space-between;
+  border-radius: 80px;
+  cursor: pointer;
 }
 
-.content-people button:last-child {
-  padding: 0;
+.content-people:hover {
+  background-color: var(--hover-background-color);
+}
+
+.content-people-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px !important;
+  padding: 7px 20px;
 }
 
 .content-people .search-icon {
@@ -272,27 +266,66 @@
 }
 
 .content-check {
+  height: 100%;
+  cursor: pointer;
+}
+
+.content-check-container {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
 .content-checkout {
-  padding-left: 20px;
+  height: 100%;
+  border-radius: 80px;
+}
+
+.content-checkout-container {
+  padding: 12px 20px;
+  height: 100%;
+}
+
+.content-checkout:hover {
+  background-color: var(--hover-background-color);
 }
 
 .content-checkin {
-  padding-right: 20px;
+  height: 100%;
+  border-radius: 80px;
+}
+
+.content-checkin-container {
+  padding: 12px 20px;
+  height: 100%;
+}
+
+.content-checkin:hover {
+  background-color: var(--hover-background-color);
 }
 
 .content-location {
   flex: 1;
   height: 100%;
+  border-radius: 80px;
+  cursor: pointer;
+}
+
+.content-location:hover {
+  background-color: var(--hover-background-color);
 }
 
 .content-location input {
   outline: none;
   border: none;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.content-location-container {
+  height: 100%;
+  padding: 12px 20px;
 }
 
 .feature-content-saperation {

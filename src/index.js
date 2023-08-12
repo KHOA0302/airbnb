@@ -21,8 +21,8 @@ coverScreen.onclick = () => {
   coverScreen.classList.remove("on");
   searchContainer.classList.remove("scale-transform");
 
-    //test
-    document.querySelector(".search-feature").style = "display: none";
+  //test
+  document.querySelector(".search-feature").style = "display: none";
 };
 
 searchLocationBtn.onclick = () => {
