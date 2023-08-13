@@ -1,9 +1,19 @@
 const header = document.querySelector(".header");
 const searchContainer = document.querySelector(".search-container");
+
 const searchLocationBtn = document.querySelector(".search-location");
 const searchTimeBtn = document.querySelector(".search-time");
 const searchPeopleBtn = document.querySelector(".search-people");
+
 const coverScreen = document.querySelector(".header-coverScreen");
+const searchFeature = document.querySelector(".search-feature");
+
+const navLocationFeature = document.querySelector(".feature-nav-location");
+const navLiveExpFeatures = document.querySelector(".feature-nav-liveExp");
+const navExpFeatures = document.querySelector(".feature-nav-experience");
+
+const searchIcon = searchFeature.querySelector(".search-icon");
+const textInSearchIcon = document.querySelector(".text-search-icon");
 
 const headerSearchHandler = () => {
   header.style = "box-shadow: none";
@@ -11,8 +21,13 @@ const headerSearchHandler = () => {
   coverScreen.classList.add("on");
   searchContainer.classList.add("scale-transform");
 
-  //test
-  document.querySelector(".search-feature").style = "display: block";
+  searchFeature.classList.remove("search-feature-hidden");
+  searchFeature
+    .querySelector(".feature-content-container")
+    .classList.add("change-background");
+
+  textInSearchIcon.style.display = "block";
+  searchIcon.classList.add("change-size");
 };
 
 coverScreen.onclick = () => {
@@ -21,10 +36,27 @@ coverScreen.onclick = () => {
   coverScreen.classList.remove("on");
   searchContainer.classList.remove("scale-transform");
 
-  //test
-  document.querySelector(".search-feature").style = "display: none";
+  searchFeature.classList.add("search-feature-hidden");
+
+  navLocationFeature.classList.remove("chosen");
+  navLiveExpFeatures.classList.remove("chosen");
+  navExpFeatures.classList.remove("chosen");
 };
 
 searchLocationBtn.onclick = () => {
   headerSearchHandler();
+
+  navLocationFeature.classList.add("chosen");
+};
+
+searchTimeBtn.onclick = () => {
+  headerSearchHandler();
+
+  navLocationFeature.classList.add("chosen");
+};
+
+searchPeopleBtn.onclick = () => {
+  headerSearchHandler();
+
+  navLocationFeature.classList.add("chosen");
 };
